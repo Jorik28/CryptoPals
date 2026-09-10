@@ -34,7 +34,7 @@ def decrypt(ciphertext: bytes, key: bytes) -> str:
         value = value.replace("_SEMI_", ';')
         data_dict[key] = value
     if 'admin' in data_dict:
-        print("Dit is de dictionary:", data_dict)
+        print("This is the dictionary:", data_dict)
         return True
     else:
         return data_dict
@@ -53,7 +53,7 @@ print("Ciphertext block 3 was:", ciphertext[32:48])
 print("Ciphertext block 3 is :", new_ciphertext[32:48])
 print("Output:", out2)
 if out2 == True:
-    print("!!!!!!!!!!!!!\n!!!!!!!!!!!!!\nHOERA JE HEBT DEZE CHALLENGE GEKRAAKT! JE HEBT EEN ADMIN PROFIEL GEMAAKT!\n!!!!!!!!!!!!!\n!!!!!!!!!!!!!")
+    print("!!!!!!!!!!!!!\n!!!!!!!!!!!!!\nYIPPIE YOU SOLVED THE CHALLENGE! YOU CREATED AN ADMIN PROFILE!\n!!!!!!!!!!!!!\n!!!!!!!!!!!!!")
 
 """
 comment1=cooking    %20MCs;userdata=            �Y  ��!�^ҹ���"�ډ�~q�����        (ent2=%20like%20    a%20pound%20of%20bacon

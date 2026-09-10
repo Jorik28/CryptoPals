@@ -16,7 +16,7 @@ def encrypt_oracle(key: bytes) -> bytes:
     rd_i = random.randint(0,9)
     random_string = string_list[rd_i]
     string_bytes = base64.b64decode(random_string)
-    #string_bytes = b'123456789012345 123456789012345 Hallo'
+    #string_bytes = b'123456789012345 123456789012345 Hello'
     plaintext = string_bytes
     cipher = AES.new(key, AES.MODE_ECB)
     IV = random_bytes_gen(16)

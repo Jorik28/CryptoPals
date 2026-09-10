@@ -58,9 +58,9 @@ for j in range(block_size+1):
         previous_cipher = current_cipher
 
 if len_random_bytes != rd:
-    print("\nPSST, niet doorvertellen maar je hebt het aantal random NIET bytes goed! ER GAAT IETS MIS HIER\n")
-    print("Dit zijn de random bytes:", random_bytes)
-    print("Dit zijn", rd, "bytes")
+    print("\nPSST, you did NOT guessed the number of random bytes! SOMETHINGS WRONG HERE\n")
+    print("These are the random bytes:", random_bytes)
+    print("These are", rd, "bytes")
 
 #discover length unknown string
 dummy_plain = b''

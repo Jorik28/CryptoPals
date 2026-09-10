@@ -148,7 +148,7 @@ def break_vigenere(ciphertext: bytes) -> bytes:
     for key_size in range(2,40):
         blocks = [ciphertext[i:i+key_size] for i in range(0,len(ciphertext),key_size)]
         norm_dist = (Hamming_Dist(blocks[0],blocks[1])+Hamming_Dist(blocks[2],blocks[3])+Hamming_Dist(blocks[4],blocks[5]))/ key_size
-        #TODO: norm_dist functie hierboven is nog niet optimaal, goede keylength heeft pas 5e beste score
+        #norm_dist function above is not optimal, the good keylength has only the 5th best score
         key_size_scores.append((key_size,norm_dist))
     key_size_scores.sort(key=lambda x: x[1], reverse=False)
     candidate_key_sizes = [x[0] for x in key_size_scores[:num_guesses]]
