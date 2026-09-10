@@ -19,6 +19,10 @@ my understanding of practical cryptography and
 to gain more programming experience implementing 
 and attacking cryptographic systems.
 
+The Cryptopals challenges provide a way to explore both sides:
+understanding cryptographic concepts mathematically while 
+implementing algorithms and attacks in code.
+
 ## Language
 
 Python
